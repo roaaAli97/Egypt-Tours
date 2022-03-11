@@ -1,0 +1,32 @@
+.composition{
+    position:relative;
+    &__photo{
+        width:55%;
+        display: inline-block;
+        height:20rem;
+        position:absolute;
+        box-shadow:1rem 2rem 4rem rgba($color-black,0.3);
+        outline-offset:1rem;
+        border-radius:3px;
+        &--1{
+          top:-2rem;
+          left:0;
+        }
+        &--2{
+            top:2rem;
+            right:0;
+        }
+        &--3{
+            top:11rem;
+            left:8rem;
+        }
+
+        &:hover{
+            transform:scale(1.2);
+            z-index:100;
+            outline:1.5rem solid $color-primary-dark;
+        }
+    }
+    
+    
+}

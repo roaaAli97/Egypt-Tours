@@ -1,0 +1,17 @@
+.row{
+    display:flex;
+    width:100%;
+    gap:3rem;
+}
+.col-1-of-2{
+    width:45%;
+}
+.col-2-of-2{
+    width:45%;
+}
+.col-1-of-4{
+    width:25%;
+}
+.col-1-of-3{
+    width:33.333333333333%;
+}

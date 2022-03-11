@@ -1,0 +1,40 @@
+.story{
+    width:80%;
+    background-color: rgba($color-white,0.8);
+    margin:0 auto;
+    margin-bottom:6rem;
+    padding: 2rem;
+    transform:skewX(-7deg);
+    box-shadow:0 2rem 4rem rgba($color-black,0.6);
+    & >*{
+        transform: skewX(7deg);
+    }
+    &__shape{
+        position:relative;
+    }
+    &__img{
+        width:15rem;
+        height:15rem;
+        border-radius:50%;
+        object-fit: cover;
+    }
+    &__caption{
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-20%);
+       font-size:2rem;
+       color:$color-white;
+       text-align:center;
+       opacity:0;
+       text-transform:uppercase;
+       transition:all 0.3s;
+    }
+    &:hover &__caption{
+       opacity:1;
+       transform:translate(-50%,-50%);
+    }
+    &:hover &__img{
+       filter:blur(3px) brightness(80%);
+    }
+}

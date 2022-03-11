@@ -1,0 +1,44 @@
+.section-about{
+    padding:20rem 0;
+    background-color:$color-primary-light;
+    margin-top:-20rem;
+    text-align:center;
+
+}
+.features-section{
+    padding:20rem 5rem;
+    background-image:linear-gradient(to right,rgba($color-primary,0.8),rgba($color-primary-light,0.8)) ,url(./images/sinai-mountains.jpg);
+    background-size: cover;
+    background-position:center;
+    margin-top:-8rem;
+    transform: skewY(-7deg);
+    & > *{
+        transform:skewY(7deg);
+    }
+}
+.section-tours{
+    padding:20rem 5rem;
+    background-color: $color-primary-light;
+    margin-top:-10rem;
+}
+.section-stories{
+    padding:20rem 5rem;
+    background-color: $color-primary-light;
+    background-image: linear-gradient(to right,rgba($color-primary-light,0.9),rgba($color-primary-dark,0.9)), url('./images/pyramids.jpg');
+    background-position: center;
+    background-size:cover;
+    
+}
+.booking-section{
+    padding:20rem 3rem;
+    background-color: $color-primary-light;
+    min-width: 35rem;
+}
+.footer-section{
+    padding:10rem 3rem;
+    background-color:#1c1c1c;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    
+}
